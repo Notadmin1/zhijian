@@ -1,0 +1,28 @@
+.reading-style-controls { padding: 14px 12px 11px; margin: 0 0 18px; border: 1px solid #dfe7d8; border-radius: 8px; background: #f7faf4; }
+.reading-style-heading { display: flex; align-items: center; justify-content: space-between; gap: 8px; margin-bottom: 11px; }
+.reading-style-heading strong { font-size: 12px; font-weight: 600; color: #4c6740; }
+.reading-style-heading button { display: inline-flex; align-items: center; gap: 4px; color: #748d64; font-size: 10px; padding: 3px 0; }
+.density-options { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 5px; }
+.density-options button { padding: 9px 2px; border: 1px solid #dfe7d8; border-radius: 5px; background: white; color: #778a6b; min-width: 0; }
+.density-options strong { display: block; font-size: 12px; font-weight: 500; }
+.density-options small { display: block; font-size: 9px; margin-top: 5px; color: #8c9b81; }
+.density-options button[aria-checked="true"] { border-color: #8fa87a; color: #476936; background: #eaf2e3; box-shadow: inset 0 0 0 1px #8fa87a; }
+.density-current { display: flex; align-items: center; gap: 6px; font-size: 10px; color: #829475; margin: 9px 0 14px; }
+.density-current span { font-size: 9px; border: 1px solid #d9e3d0; padding: 0 4px; border-radius: 3px; }
+.decoration-setting { display: flex; flex-direction: column; gap: 7px; font-size: 11px; color: #607952; }
+.decoration-setting select { min-width: 0; width: 100%; font: inherit; padding: 7px 8px; background: white; border: 1px solid #dce6d3; border-radius: 5px; color: #657f56; }
+.reading-spacing-toggle { display: flex; align-items: center; justify-content: space-between; gap: 10px; margin-top: 15px; }
+.reading-spacing-toggle span { font-size: 11px; color: #5d7550; }
+.reading-spacing-toggle small { display: block; margin-top: 5px; font-size: 9px; line-height: 1.7; color: #91a183; }
+.reading-spacing-toggle .toggle { flex-shrink: 0; }
+.reading-controls-hint { font-size: 9px; line-height: 1.9; color: #91a182; margin: 11px 0 0; }
+.reading-comparison-tabs { display: flex; gap: 8px; padding: 0 0 19px; }
+.reading-comparison-tabs button { font-size: 12px; padding: 8px 13px; border-radius: 5px; color: #809173; background: #f0f5e9; }
+.reading-comparison-tabs button[aria-selected="true"] { background: #e1edd6; color: #4d7439; }
+.reading-style-option .template-real-preview { scroll-behavior: auto; }
+.preset-reading-summary { color: #698654 !important; }
+@media (max-width: 760px) {
+  .reading-style-controls { padding: 14px; }
+  .reading-comparison-tabs { gap: 6px; }
+  .reading-comparison-tabs button { padding: 8px 9px; font-size: 11px; }
+}

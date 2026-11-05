@@ -1,0 +1,71 @@
+.personal-preset-entry { justify-content: flex-start; }
+.personal-preset-entry span { margin-left: auto; font-size: 10px; color: #809078; }
+.editor-entry-bar { flex-wrap: wrap; row-gap: 7px; }
+.collection-toolbar { display: flex; align-items: center; gap: 16px; margin: 14px 0; }
+.collection-toolbar p { flex: 1; margin: 0; font-size: 12px; line-height: 1.8; color: #7c8974; }
+.collection-toolbar .button { flex-shrink: 0; }
+.history-grid { display: grid; grid-template-columns: 210px minmax(0, 1fr); border: 1px solid #e1e8dc; border-radius: 9px; overflow: hidden; height: min(53dvh, 570px); }
+.version-list { overflow: auto; background: #f7f9f4; border-right: 1px solid #e1e8dc; scrollbar-width: thin; }
+.version-list button { display: flex; flex-direction: column; text-align: left; width: 100%; gap: 7px; padding: 16px; border-bottom: 1px solid #e1e8dc; overflow-wrap: anywhere; }
+.version-list button:hover { background: #edf3e8; }
+.version-list button[aria-pressed="true"] { background: #e7f0df; box-shadow: inset 3px 0 #6b8c54; }
+.version-list strong { font-size: 12px; color: #4b6341; }
+.version-list time, .version-list span, .version-list p { font-size: 11px; color: #7a8972; line-height: 1.7; margin: 0; }
+.version-list p { display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; }
+.version-preview { min-width: 0; padding: 24px 30px; overflow: auto; background: white; scrollbar-width: thin; }
+.version-preview > h3 { font-size: 22px; line-height: 1.6; margin: 0 0 22px; color: #33412e; overflow-wrap: anywhere; }
+.history-modal .modal-actions { flex-wrap: wrap; }
+.history-modal .modal-actions .muted { flex: 1; min-width: 180px; line-height: 1.8; }
+.recycle-list { max-height: 56dvh; overflow: auto; scrollbar-width: thin; }
+.recycle-item { display: flex; align-items: center; flex-wrap: wrap; gap: 12px; padding: 16px 4px; border-bottom: 1px solid #e5eadf; }
+.recycle-item > div:first-child { flex: 1; min-width: 160px; overflow-wrap: anywhere; }
+.recycle-item strong { font-size: 14px; color: #4b6141; }
+.recycle-item p { font-size: 12px; line-height: 1.8; color: #819076; margin: 7px 0 0; }
+.recycle-actions { display: flex; align-items: center; gap: 8px; }
+.delete-confirmation { display: flex; align-items: center; gap: 10px; flex-wrap: wrap; width: 100%; background: #fff4ef; border: 1px solid #efdbd1; border-radius: 7px; padding: 12px; }
+.delete-confirmation p { flex: 1; min-width: 180px; margin: 0; color: #9a604c; }
+.preset-form { background: #f5f8f1; border: 1px solid #dfe8d8; border-radius: 9px; padding: 17px; display: grid; gap: 13px; }
+.preset-form-heading { display: flex; align-items: center; gap: 8px; flex-wrap: wrap; font-size: 12px; color: #527243; }
+.preset-form-heading span { font-size: 11px; color: #829377; margin-left: auto; }
+.preset-form label { display: flex; flex-direction: column; gap: 7px; font-size: 12px; color: #617653; }
+.preset-form input, .preset-form textarea { width: 100%; border: 1px solid #d8e2cf; background: white; border-radius: 6px; padding: 9px 11px; font: inherit; color: #405535; line-height: 1.8; }
+.preset-form textarea { resize: vertical; min-height: 72px; max-height: 180px; }
+.preset-form-actions { display: flex; justify-content: flex-end; gap: 10px; }
+.preset-list { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 14px; margin-top: 20px; }
+.preset-list > .empty-hint { grid-column: 1 / -1; }
+.preset-item { padding: 17px; border: 1px solid #e2e9dc; border-top: 3px solid var(--preset-accent); border-radius: 8px; min-width: 0; }
+.preset-item header { display: flex; align-items: center; gap: 8px; }
+.preset-item header strong { flex: 1; font-size: 14px; overflow-wrap: anywhere; color: #425a35; }
+.preset-item header .icon-button { width: 26px; height: 26px; flex-shrink: 0; }
+.preset-color { width: 9px; height: 9px; border-radius: 50%; background: var(--preset-accent); flex-shrink: 0; }
+.preset-item p, .preset-item small { font-size: 11px; line-height: 1.9; color: #819174; }
+.preset-item p { margin-bottom: 4px; }
+.preset-item > .button { width: 100%; margin-top: 16px; font-size: 12px; }
+.preset-footer-preview { font: inherit; font-size: 11px; line-height: 1.8; color: #829174; padding: 10px; background: #f7f9f5; border-radius: 5px; white-space: pre-wrap; overflow-wrap: anywhere; max-height: 110px; overflow: auto; }
+.preset-footer-choice { display: flex; align-items: center; gap: 7px; font-size: 11px; line-height: 1.8; color: #6a805b; }
+.preset-footer-choice input { accent-color: #6c8c53; flex-shrink: 0; }
+.form-error { font-size: 12px; color: #a85e49; line-height: 1.8; background: #fff3ec; padding: 10px 12px; border-radius: 6px; }
+.issue-group { display: flex; gap: 8px; align-items: center; margin: 0; padding: 12px; font-size: 12px; background: #f2f6ee; color: #668153; }
+.issue-group.warning { color: #946143; background: #fcf3e9; }
+.issue-group small { font-size: 10px; border: 1px solid currentColor; border-radius: 9px; padding: 0 5px; }
+.layout-issue-row { display: flex; align-items: center; border-bottom: 1px solid #e8ede3; }
+.layout-issue-locate { display: flex; flex: 1; align-items: center; gap: 14px; min-width: 0; text-align: left; padding: 15px 12px; border-radius: 5px; }
+.layout-issue-locate:hover { background: #f4f7f0; }
+.layout-issue-row .issue-ignore { flex-shrink: 0; font-size: 11px; color: #7f9273; padding: 9px; text-decoration: underline; text-underline-offset: 3px; }
+.ignored-toggle { display: block; width: 100%; text-align: left; padding: 14px 12px; color: #7a8f6c; font-size: 12px; }
+.ignored-issues .layout-issue-row strong { color: #8a9682; }
+@media (max-width: 760px) {
+  .collection-toolbar { align-items: flex-start; flex-direction: column; gap: 10px; }
+  .history-grid { grid-template-columns: 1fr; grid-template-rows: 136px minmax(0, 1fr); height: 53dvh; }
+  .version-list { display: flex; border-right: 0; border-bottom: 1px solid #e1e8dc; }
+  .version-list button { flex-shrink: 0; width: 170px; padding: 12px; border-right: 1px solid #e1e8dc; }
+  .version-list p { display: none; }
+  .version-preview { padding: 18px; }
+  .preset-list { grid-template-columns: 1fr; }
+  .preset-form { padding: 13px; }
+  .preset-form-heading span { margin-left: 0; }
+  .draft-modal-toolbar { flex-wrap: wrap; }
+  .draft-modal-toolbar .search-field { flex-basis: 100%; }
+  .layout-issue-locate { padding-left: 6px; gap: 8px; }
+  .layout-issue-row .issue-ignore { padding: 8px 3px; font-size: 10px; }
+}
